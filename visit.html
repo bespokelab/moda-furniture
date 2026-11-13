@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Book a site visit · MODA Furniture</title>
+  <meta name="description" content="Book a MODA Furniture site visit in Hohoe. GHS 50 inside Hohoe, GHS 250 outside. The fee is non-refundable and separate from the job.">
+  <meta name="theme-color" content="#0c2340">
+  <meta property="og:title" content="Book a site visit · MODA Furniture">
+  <meta property="og:description" content="GHS 50 inside Hohoe, GHS 250 outside. Weekdays 9:00 AM to 4:00 PM. WhatsApp 055 884 5690.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/console-hero.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg class="mark" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+          <rect width="32" height="32" fill="#d7b56a"/>
+          <path d="M8 23.5V9.5L16 17l8-7.5v14" fill="none" stroke="#0c2340" stroke-width="2.2"/>
+        </svg>
+        <span class="logo-type">MODA<small>Furniture</small></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="work.html">Work</a>
+        <a href="pricing.html">Prices</a>
+        <a href="visit.html" aria-current="page">Visit</a>
+      </nav>
+      <a class="btn btn-gold btn-small header-cta" href="https://wa.me/233558845690?text=Hello%20MODA%20Furniture%2C%20I%20would%20like%20to%20book%20a%20site%20visit.">WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow"><i aria-hidden="true"></i> Monday–Friday, 9:00 AM – 4:00 PM</p>
+        <h1>Book a visit. <em>Get a real budget.</em></h1>
+        <p>A WhatsApp message is free. The paid part is the visit to the room, which is how the budget gets written. Inside Hohoe that visit is GHS 50. Outside Hohoe it is GHS 250. The fee is non-refundable and is charged separately from the furniture.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap visit-layout">
+        <aside class="visit-aside">
+          <p class="eyebrow"><i aria-hidden="true"></i> The visit fee</p>
+          <h2>Charged for the visit itself.</h2>
+          <div class="fee-pair">
+            <article>
+              <strong>GHS 50</strong>
+              <span>Inside Hohoe. Scope and a budget.</span>
+            </article>
+            <article>
+              <strong>GHS 250</strong>
+              <span>Outside Hohoe. Scope and a budget.</span>
+            </article>
+          </div>
+          <p>Saturday and Sunday are closed. Call or WhatsApp <a class="link" href="tel:+233558845690">055 884 5690</a>.</p>
+          <p>Have room photos ready if you can. Rough sizes help. A budget you need to stay inside is useful too.</p>
+          <div class="receipt" aria-live="polite">
+            <p class="receipt-kicker">This visit</p>
+            <p class="receipt-fee" id="fee-now">GHS 50</p>
+            <p id="pay-now">70% deposit to confirm the order, 20% when it ships, and 10% when installation is finished.</p>
+            <p id="time-now">Most orders are ready in 72 hours to 7 days, depending on workload.</p>
+          </div>
+        </aside>
+
+        <form id="visit-form" class="form-card" action="https://wa.me/233558845690" method="get">
+          <div class="field">
+            <label for="name"><span>Your name</span></label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone"><span>WhatsApp number</span></label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+          </div>
+
+          <fieldset>
+            <legend>Where is the job?</legend>
+            <div class="choice-row">
+              <label class="choice">
+                <input type="radio" name="where" value="Inside Hohoe" data-fee="GHS 50" checked>
+                <span><b>Inside Hohoe</b><small>Visit fee GHS 50</small></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="where" value="Outside Hohoe" data-fee="GHS 250">
+                <span><b>Outside Hohoe</b><small>Visit fee GHS 250</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="piece"><span>What do you need?</span></label>
+            <select id="piece" name="piece">
+              <option>TV console</option>
+              <option>TV unit</option>
+              <option>Wardrobe</option>
+              <option>Bed</option>
+              <option>Kitchen cabinets</option>
+              <option>Office desk or table</option>
+              <option>Vanity table</option>
+              <option>Center table</option>
+              <option>Display shelving</option>
+              <option>Remodeling</option>
+              <option>Servicing</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="installation"><span>Will you need installation?</span></label>
+            <select id="installation" name="installation">
+              <option data-pay="70% deposit to confirm the order, 20% when it ships, and 10% when installation is finished.">Yes, install it</option>
+              <option data-pay="70% deposit to confirm the order, and 30% before the piece leaves the workshop.">No, delivery or pickup only</option>
+              <option data-pay="With installation: 70% to confirm, 20% on shipping, 10% when installation is finished. Delivery or pickup only: 70% to confirm, and 30% before the piece leaves the workshop.">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="size"><span>How big is the job?</span></label>
+            <select id="size" name="size">
+              <option data-time="Most orders are ready in 72 hours to 7 days, depending on workload.">Most orders</option>
+              <option data-time="A small job takes about 7 days.">Small job</option>
+              <option data-time="A big job takes about 2 weeks.">Big job</option>
+              <option data-time="A large commercial project, such as a 40-room hotel, takes at least 30 days.">Large commercial</option>
+              <option data-time="Remodeling and servicing take 10 days or less.">Remodeling or servicing</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="notes"><span>Anything we should know</span></label>
+            <textarea id="notes" name="notes" placeholder="Room size, the finish you want, or a budget you need to stay inside."></textarea>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" name="agree" required>
+            <span>I understand the site-visit fee is non-refundable and is charged separately from the furniture.</span>
+          </label>
+
+          <p class="preview" id="preview">Hello MODA Furniture, I would like to book a site visit.
+Name: 
+WhatsApp: 
+Location: Inside Hohoe
+Visit fee: GHS 50 (non-refundable, and charged separately from the job)
+Piece: TV console
+Installation: Yes, install it
+Timing guide: Most orders are ready in 72 hours to 7 days, depending on workload.</p>
+
+          <p id="form-error" class="form-error" role="alert"></p>
+          <button class="btn btn-forest" type="submit">Send this on WhatsApp</button>
+          <p class="fine">The button opens WhatsApp with the message above, ready for you to send. If you have photos of the room, add them in the same chat. You can also <a href="https://wa.me/233558845690?text=Hello%20MODA%20Furniture%2C%20I%20would%20like%20to%20book%20a%20site%20visit.">start a blank chat</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-word">MODA</p>
+        <p>Custom furniture from Hohoe Kpoeta. Design, building, remodeling, and servicing.</p>
+      </div>
+      <div>
+        <p class="footer-label">Workshop</p>
+        <p>Hohoe Kpoeta<br>Hohoe, Volta Region, Ghana</p>
+        <p>Monday–Friday<br>9:00 AM – 4:00 PM<br>Saturday and Sunday closed</p>
+        <p><a href="tel:+233558845690">055 884 5690</a></p>
+      </div>
+      <div>
+        <p class="footer-label">Pages</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="visit.html">Book a visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-label">Find us</p>
+        <p>TikTok and Snapchat are active. Ask on WhatsApp for the handles.</p>
+        <p>Facebook and Instagram are being set up.</p>
+        <p>A business email is being opened. For now, quotes travel on WhatsApp.</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Hohoe+Kpoeta+Ghana" target="_blank" rel="noopener">Hohoe Kpoeta on the map</a></p>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>© 2026 MODA Furniture</p>
+      <p>MoMo · Cash · Bank transfer</p>
+    </div>
+  </footer>
+
+  <div class="dock">
+    <a href="tel:+233558845690">Call</a>
+    <a href="https://wa.me/233558845690?text=Hello%20MODA%20Furniture%2C%20I%20would%20like%20to%20book%20a%20site%20visit.">WhatsApp</a>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>
