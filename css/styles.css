@@ -202,19 +202,23 @@ a[href^="tel:"] { white-space: nowrap; }
 
 .logo-lockup {
   display: block;
-  height: 54px;
-  width: auto;
-  max-width: min(248px, 62vw);
-  object-fit: contain;
-  border-radius: 6px;
+  --logo-h: 52px;
+  height: var(--logo-h);
+  width: calc(var(--logo-h) * 1024 / 576 * 1.5);
+  max-width: min(calc(78vw * 1.5), 420px);
+  object-fit: fill;
+  object-position: left center;
 }
 
 body.home .logo-lockup {
-  box-shadow: 0 2px 14px rgba(8, 22, 46, 0.32);
+  box-shadow: 0 2px 12px rgba(8, 22, 46, 0.28);
+  border-radius: 4px;
 }
 
 @media (max-width: 480px) {
-  .logo-lockup { height: 46px; }
+  .logo-lockup {
+    --logo-h: 44px;
+  }
 }
 
 .nav { display: flex; gap: 2px; }
